@@ -6,7 +6,8 @@ export const translations = {
       appStore: "App Store",
       playStore: "Google Play",
       downloadOn: "Download on the",
-      getItOn: "Get it on"
+      getItOn: "Get it on",
+      comingSoon: "출시 예정"
     },
     features: {
       intro: "매일 \"무엇부터 해야 할까?\" 고민하는 시간을 줄이고,\n바로 실행으로 이어지도록 설계되었습니다.",
@@ -45,7 +46,8 @@ export const translations = {
       appStore: "App Store",
       playStore: "Google Play",
       downloadOn: "Download on the",
-      getItOn: "Get it on"
+      getItOn: "Get it on",
+      comingSoon: "Coming Soon"
     },
     features: {
       intro: "Designed to reduce the time spent wondering\n\"What should I do first?\" every day,\nand lead directly to action.",
