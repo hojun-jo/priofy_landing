@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
+import { useLanguage } from '../i18n/useLanguage';
 
 const FeatureItem = ({ title, description, icon }) => (
   <div className="glass-card animate-fade-in" style={{ padding: '2rem', flex: '1 1 300px', textAlign: 'left' }}>

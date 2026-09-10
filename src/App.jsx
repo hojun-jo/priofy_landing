@@ -5,7 +5,7 @@ import ScreenshotShowcase from './components/ScreenshotShowcase';
 import FeaturesSection from './components/FeaturesSection';
 import Footer from './components/Footer';
 import LanguageSwitcher from './components/LanguageSwitcher';
-import { LanguageProvider } from './i18n/LanguageContext';
+import { LanguageProvider } from './i18n/LanguageProvider';
 
 function App() {
   return (

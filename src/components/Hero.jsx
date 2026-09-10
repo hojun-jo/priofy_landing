@@ -1,7 +1,7 @@
 import React from 'react';
 import appIcon from '../assets/app_icon.png';
 import appStoreBadge from '../assets/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg';
-import { useLanguage } from '../i18n/LanguageContext';
+import { useLanguage } from '../i18n/useLanguage';
 
 const Hero = () => {
   const { t } = useLanguage();
