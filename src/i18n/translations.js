@@ -1,82 +1,166 @@
 export const translations = {
   ko: {
+    accessibility: {
+      skipToContent: '본문으로 건너뛰기',
+    },
+    header: {
+      navigationLabel: '주요 메뉴',
+      features: '기능',
+      story: '이야기',
+      languageLabel: '언어 선택',
+      koreanLabel: '한국어 선택됨',
+      englishLabel: '영어로 전환',
+    },
     hero: {
-      title: "Priofy는 할 일은 많지만\n무엇부터 시작해야 할지\n막막한 사람을 위한 앱입니다.",
-      subtitle: "할 일을 입력해 보세요.\nAI가 우선순위를 제안합니다. 내 상황에 맞게 순서를 조정하고, 지금 중요한 일부터 시작해 보세요.\n우리는 당신이 고민에 시간을 쓰기보다 바로 행동할 수 있기를 바랍니다.",
-      appStore: "App Store",
-      playStore: "Google Play",
-      downloadOn: "Download on the",
-      getItOn: "Get it on",
-      comingSoon: "출시 예정"
+      iconAlt: 'Priofy 앱 아이콘',
+      titleLead: '오늘 할 일은 많다.',
+      titleAccent: '무엇부터',
+      titleTail: '가 어렵다.',
+      subtitle: '할 일을 입력해 보세요. AI가 우선순위를 제안합니다. 내 상황에 맞게 순서를 조정하고, 지금 중요한 일부터 시작해 보세요. 우리는 당신이 고민에 시간을 쓰기보다 바로 행동할 수 있기를 바랍니다.',
+      download: 'App Store에서 다운로드',
+      appStoreAria: 'App Store에서 Priofy 다운로드',
+      playLead: 'Google Play는',
+      playStatus: '조금 더 기다려 주세요',
+      comingSoon: '준비 중',
+    },
+    runningLine: ['먼저 할 것', '오늘의 순서', '우선순위', '카테고리', '온디바이스', '프라이버시'],
+    screenshots: {
+      kicker: 'App Screens',
+      titleLead: '고민은 앱이 대신 삼키고,',
+      titleTail: '당신은 목록만 밟으면 됩니다.',
+      firstTitle: '순서가 보입니다.',
+      firstDescription: 'AI가 높고 낮음을 먼저 정리해 드립니다.',
+      firstAlt: '할 일 목록 화면 — 색상 우선순위 스트라이프, 카테고리, 마감일이 표시된 목록',
+      secondTitle: '근거가 따릅니다.',
+      secondDescription: '점수·중요도·긴급도를 구체적으로 확인하세요.',
+      secondAlt: '작업 상세 화면 — 점수, 중요도, 긴급도 지표 화면',
+      thirdTitle: '깔끔히 유지됩니다.',
+      thirdDescription: '카테고리는 AI가 자동으로 정리합니다.',
+      thirdAlt: '진행 중인 할 일 화면 — 카테고리와 상태가 정리된 목록',
     },
     features: {
-      intro: "매일 \"무엇부터 해야 할까?\" 고민하는 시간을 줄이고,\n바로 실행으로 이어지도록 설계되었습니다.",
-      aiPriority: {
-        title: "AI 기반 우선순위 제안",
-        description: "입력한 할 일을 AI가 분석해 우선순위를 제안합니다. 제안된 순서를 확인하고, 내 상황에 맞게 직접 조정할 수 있습니다."
+      kicker: 'What it does',
+      title: '네 가지 결정, 매일 아침 3분을 줄입니다.',
+      intro: '무엇을 먼저 할지, 어디에 둘지, 얼마나 긴급한지 — 고민하는 시간이 아니라 실행하는 시간을 늘리는 것, 그게 전부입니다.',
+      priority: {
+        title: 'AI 우선순위 제안',
+        description: '입력만 하면 AI가 순서를 스케치합니다. 마음에 들지 않으면 당신의 순서대로 — 그게 더 좋은 신호입니다.',
       },
-      autoCategory: {
-        title: "AI 기반 카테고리 제안",
-        description: "AI가 각 할 일의 성격을 파악해 카테고리를 제안합니다. 필요하면 직접 변경할 수 있어, 내 방식대로 깔끔한 목록을 유지할 수 있습니다."
+      category: {
+        title: 'AI 카테고리 정리',
+        description: '할 일의 성격을 파악해 자리를 잡아 줍니다. 필요하면 언제든 직접 옮길 수 있습니다.',
       },
       onDevice: {
-        title: "기기 안에서 처리되는 AI",
-        description: "할 일 분석, 우선순위 정리, 카테고리 분류 등 핵심 AI 기능은 기기에서 처리됩니다. 인터넷 연결 없이 사용할 수 있습니다."
+        title: '전부 기기 안에서 처리',
+        description: '분석과 정리는 기기에서 일어납니다. 지하철에서도, 와이파이 없이도 켜집니다.',
       },
       privacy: {
-        title: "개인정보 중심 설계",
-        description: "할 일 내용과 우선순위 정보는 기기에 보관되며 서버로 전송되지 않습니다. 앱 오류 진단을 위한 제한된 정보는 Firebase Crashlytics로 전송될 수 있습니다."
-      }
+        title: '당신의 데이터는 당신의 기기에',
+        description: '할 일은 기기에만 저장되고 서버로 절대 전송되지 않습니다.',
+      },
     },
     story: {
-      title: "AI가 찾아주는 우선순위",
-      part1: "만약 AI가 정한 순서가 마음에 들지 않는다면…\n그건 정말 좋은 신호예요. 🤔✨",
-      part2: "AI가 정한 순서와 내 생각이 다르다면,\n내 상황과 우선순위를 직접 알고 있다는 뜻일 수 있어요. 원하는 순서로 자유롭게 조정해 보세요.",
-      part3: "그리고 언젠가, Priofy 없이도 자연스럽게 할 일을 정리하고 실행할 수 있게 된다면—\n그때는 아마 Priofy를 졸업할 시기일 거예요.",
-      part4: "그때까지 Priofy는\n당신의 하루가 덜 복잡하고, 더 가벼워지도록\n조용히 곁에서 함께하겠습니다. ☕️"
+      kicker: 'Why we built this',
+      quoteLead: '“AI가 정한 순서가 마음에 들지 않는다면,',
+      quoteAccent: '그건 좋은 신호입니다.',
+      quoteTail: '당신이 자신의 하루를 가장 잘 알고 있다는 뜻이니까요.”',
+      attribution: 'Priofy를 만든 사람의 노트에서',
+      quietLead: '어느 날 Priofy 없이도 순서를 정하는 게 자연스러워진다면, 그날이 졸업식입니다. 그때까지 Priofy는 당신의 하루가 덜 복잡하고 가벼워지도록',
+      quietAccent: '조용히 곁에 있겠습니다.',
+    },
+    final: {
+      titleLead: '내일은',
+      titleAccent: '자기 전에',
+      titleTail: '고민 끝.',
+      play: 'Google Play — 준비 중',
     },
     footer: {
-      copyright: "HOJUN. All rights reserved."
-    }
+      navigationLabel: '기타 링크',
+      privacy: '개인정보처리방침',
+      contact: '문의하기',
+      appStore: 'App Store',
+    },
   },
   en: {
+    accessibility: {
+      skipToContent: 'Skip to content',
+    },
+    header: {
+      navigationLabel: 'Primary navigation',
+      features: 'Features',
+      story: 'Story',
+      languageLabel: 'Language selection',
+      koreanLabel: 'Switch to Korean',
+      englishLabel: 'English selected',
+    },
     hero: {
-      title: "Priofy is for those\nwho have many tasks\nbut don't know where to start.",
-      subtitle: "Try entering your tasks.\nAI suggests and organizes their priorities. Review the suggestions, decide what matters most right now, and take action.\nWe want you to take action rather than spend time worrying.",
-      appStore: "App Store",
-      playStore: "Google Play",
-      downloadOn: "Download on the",
-      getItOn: "Get it on",
-      comingSoon: "Coming Soon"
+      iconAlt: 'Priofy app icon',
+      titleLead: 'There is plenty to do.',
+      titleAccent: 'Where to start',
+      titleTail: ' is the hard part.',
+      subtitle: 'Try entering your tasks. AI suggests and organizes their priorities. Review the suggestions, decide what matters most right now, and take action. We want you to take action rather than spend time worrying.',
+      download: 'Download on the App Store',
+      appStoreAria: 'Download Priofy on the App Store',
+      playLead: 'Google Play is',
+      playStatus: 'coming a little later',
+      comingSoon: 'Coming soon',
+    },
+    runningLine: ['What comes first', "Today's order", 'Priorities', 'Categories', 'On-device', 'Privacy'],
+    screenshots: {
+      kicker: 'App Screens',
+      titleLead: 'Let the app carry the doubt.',
+      titleTail: 'You just follow the list.',
+      firstTitle: 'The order is clear.',
+      firstDescription: 'AI sorts the high from the low first.',
+      firstAlt: 'Task list screen with priority stripes, categories, and due dates',
+      secondTitle: 'The reasoning follows.',
+      secondDescription: 'See the score, importance, and urgency in detail.',
+      secondAlt: 'Task detail screen with score, importance, and urgency indicators',
+      thirdTitle: 'It stays tidy.',
+      thirdDescription: 'AI organizes categories automatically.',
+      thirdAlt: 'In-progress task screen with organized categories and statuses',
     },
     features: {
-      intro: "Designed to reduce the time spent wondering\n\"What should I do first?\" every day,\nand lead directly to action.",
-      aiPriority: {
-        title: "AI-Powered Priority Suggestions",
-        description: "AI analyzes your tasks and suggests a priority order. Review the suggested order and adjust it to fit your situation."
+      kicker: 'What it does',
+      title: 'Four decisions. Three quieter minutes every morning.',
+      intro: 'What to do first, where it belongs, how urgent it is — less time deciding, more time doing. That is all.',
+      priority: {
+        title: 'AI priority suggestions',
+        description: 'AI sketches an order as you enter tasks. If it feels wrong, follow your order — that is a better signal.',
       },
-      autoCategory: {
-        title: "AI-Powered Category Suggestions",
-        description: "AI identifies the nature of each task and suggests a category. Change it whenever needed to keep your list organized your way."
+      category: {
+        title: 'AI category sorting',
+        description: 'It understands the nature of a task and gives it a place. Move it yourself whenever you need to.',
       },
       onDevice: {
-        title: "AI Processed on Your Device",
-        description: "Core AI features—including task analysis, priority organization, and category suggestions—are processed on your device, even offline."
+        title: 'Everything happens on-device',
+        description: 'Analysis and organization happen on your device. It works on the subway, even without Wi-Fi.',
       },
       privacy: {
-        title: "Privacy-First Design",
-        description: "Your task content and priority information stay on your device and are not sent to a server. Limited diagnostic information may be sent to Firebase Crashlytics to help improve app reliability."
-      }
+        title: 'Your data stays with you',
+        description: 'Your tasks stay on your device and are never sent to a server.',
+      },
     },
     story: {
-      title: "AI-Powered Prioritization",
-      part1: "If you don't like the order AI has set…\nThat's actually a really good sign. 🤔✨",
-      part2: "If the order AI suggests differs from what you think,\nit may mean you know your situation and priorities best. Feel free to adjust it to the order you want.",
-      part3: "And someday, if you can naturally organize and execute tasks without Priofy—\nThat's probably when you'll graduate from Priofy.",
-      part4: "Until then, Priofy will be\nquietly by your side,\nmaking your days less complicated and lighter. ☕️"
+      kicker: 'Why we built this',
+      quoteLead: '“If you do not like the order AI chose,',
+      quoteAccent: 'that is a good sign.',
+      quoteTail: 'It means you know your own day best.”',
+      attribution: 'From the notes of the person who made Priofy',
+      quietLead: 'If choosing your order without Priofy ever feels natural, that is graduation day. Until then, Priofy will stay close, making your day less complicated and',
+      quietAccent: 'a little lighter.',
+    },
+    final: {
+      titleLead: 'Tomorrow, finish the worrying',
+      titleAccent: 'before bed.',
+      titleTail: '',
+      play: 'Google Play — coming soon',
     },
     footer: {
-      copyright: "HOJUN. All rights reserved."
-    }
-  }
+      navigationLabel: 'Other links',
+      privacy: 'Privacy policy',
+      contact: 'Contact',
+      appStore: 'App Store',
+    },
+  },
 };

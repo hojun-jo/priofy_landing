@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { translations } from './translations';
 import { LanguageContext } from './LanguageContext';
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('ko');
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   const t = (key) => {
     const keys = key.split('.');
@@ -13,15 +17,11 @@ export const LanguageProvider = ({ children }) => {
       value = value?.[k];
     }
 
-    return value || key;
-  };
-
-  const toggleLanguage = () => {
-    setLanguage(prev => prev === 'ko' ? 'en' : 'ko');
+    return value ?? key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, t, toggleLanguage }}>
+    <LanguageContext.Provider value={{ language, t, setLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

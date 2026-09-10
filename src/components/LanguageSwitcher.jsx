@@ -2,38 +2,27 @@ import React from 'react';
 import { useLanguage } from '../i18n/useLanguage';
 
 const LanguageSwitcher = () => {
-  const { language, toggleLanguage } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
 
   return (
-    <button
-      onClick={toggleLanguage}
-      style={{
-        position: 'fixed',
-        top: '2rem',
-        right: '2rem',
-        background: 'rgba(255, 255, 255, 0.05)',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
-        borderRadius: '8px',
-        padding: '0.5rem 1rem',
-        color: 'var(--color-text)',
-        fontSize: '0.9rem',
-        fontWeight: '600',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        zIndex: 1000,
-        backdropFilter: 'blur(10px)'
-      }}
-      onMouseEnter={(e) => {
-        e.target.style.background = 'rgba(255, 255, 255, 0.1)';
-        e.target.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-      }}
-      onMouseLeave={(e) => {
-        e.target.style.background = 'rgba(255, 255, 255, 0.05)';
-        e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
-      }}
-    >
-      {language === 'ko' ? 'EN' : 'KO'}
-    </button>
+    <div className="lang" role="group" aria-label={t('header.languageLabel')}>
+      <button
+        type="button"
+        aria-pressed={language === 'ko'}
+        aria-label={t('header.koreanLabel')}
+        onClick={() => setLanguage('ko')}
+      >
+        KO
+      </button>
+      <button
+        type="button"
+        aria-pressed={language === 'en'}
+        aria-label={t('header.englishLabel')}
+        onClick={() => setLanguage('en')}
+      >
+        EN
+      </button>
+    </div>
   );
 };
 
