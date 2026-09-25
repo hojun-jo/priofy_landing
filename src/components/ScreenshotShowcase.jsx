@@ -1,17 +1,23 @@
 import React from 'react';
-import screen1 from '../assets/IMG_0248.PNG';
-import screen2 from '../assets/IMG_0256.PNG';
-import screen3 from '../assets/IMG_0257.PNG';
+import darkKoreanList from '../assets/dark kr 1.png';
+import darkKoreanDetail from '../assets/dark kr 2.png';
+import darkEnglishList from '../assets/dark en 1.png';
+import darkEnglishDetail from '../assets/dark en 2.png';
 import { useLanguage } from '../i18n/useLanguage';
 
-const screenshots = [
-  { image: screen1, title: 'screenshots.firstTitle', description: 'screenshots.firstDescription', alt: 'screenshots.firstAlt' },
-  { image: screen2, title: 'screenshots.secondTitle', description: 'screenshots.secondDescription', alt: 'screenshots.secondAlt' },
-  { image: screen3, title: 'screenshots.thirdTitle', description: 'screenshots.thirdDescription', alt: 'screenshots.thirdAlt' },
+const screenshotsByLanguage = {
+  ko: [darkKoreanList, darkKoreanDetail],
+  en: [darkEnglishList, darkEnglishDetail],
+};
+
+const screenshotCopy = [
+  { title: 'screenshots.firstTitle', description: 'screenshots.firstDescription', alt: 'screenshots.firstAlt' },
+  { title: 'screenshots.secondTitle', description: 'screenshots.secondDescription', alt: 'screenshots.secondAlt' },
 ];
 
 const ScreenshotShowcase = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
+  const screenshots = screenshotsByLanguage[language] ?? screenshotsByLanguage.ko;
 
   return (
     <section className="shots" id="shots" aria-labelledby="shots-title">
@@ -21,12 +27,12 @@ const ScreenshotShowcase = () => {
           {t('screenshots.titleLead')}<br />{t('screenshots.titleTail')}
         </h2>
         <div className="shot-row">
-          {screenshots.map((screenshot, index) => (
-            <figure className="shot" key={screenshot.image}>
+          {screenshots.map((image, index) => (
+            <figure className="shot" key={image}>
               <div className="frame">
                 <img
-                  src={screenshot.image}
-                  alt={t(screenshot.alt)}
+                  src={image}
+                  alt={t(screenshotCopy[index].alt)}
                   loading="lazy"
                   decoding="async"
                   width="1206"
@@ -34,8 +40,8 @@ const ScreenshotShowcase = () => {
                 />
               </div>
               <figcaption>
-                <b>{['①', '②', '③'][index]} {t(screenshot.title)}</b>
-                {t(screenshot.description)}
+                <b>{['①', '②'][index]} {t(screenshotCopy[index].title)}</b>
+                {t(screenshotCopy[index].description)}
               </figcaption>
             </figure>
           ))}

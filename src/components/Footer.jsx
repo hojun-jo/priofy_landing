@@ -20,6 +20,7 @@ const Footer = () => {
           <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">{t('footer.appStore')}</a>
         </nav>
         <span>© 2026 HOJUN</span>
+        <small className="footer-apple-credit">{t('footer.appleTrademark')}</small>
       </div>
     </footer>
   );

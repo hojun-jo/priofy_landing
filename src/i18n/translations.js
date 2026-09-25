@@ -34,9 +34,6 @@ export const translations = {
       secondTitle: '근거가 따릅니다.',
       secondDescription: '점수·중요도·긴급도를 구체적으로 확인하세요.',
       secondAlt: '작업 상세 화면 — 점수, 중요도, 긴급도 지표 화면',
-      thirdTitle: '깔끔히 유지됩니다.',
-      thirdDescription: '카테고리는 AI가 자동으로 정리합니다.',
-      thirdAlt: '진행 중인 할 일 화면 — 카테고리와 상태가 정리된 목록',
     },
     features: {
       kicker: 'What it does',
@@ -79,6 +76,7 @@ export const translations = {
       privacy: '개인정보처리방침',
       contact: '문의하기',
       appStore: 'App Store',
+      appleTrademark: 'Apple 및 Apple 로고는 미국 및 다른 국가에서 등록된 Apple Inc.의 상표입니다.',
     },
   },
   en: {
@@ -116,9 +114,6 @@ export const translations = {
       secondTitle: 'The reasoning follows.',
       secondDescription: 'See the score, importance, and urgency in detail.',
       secondAlt: 'Task detail screen with score, importance, and urgency indicators',
-      thirdTitle: 'It stays tidy.',
-      thirdDescription: 'AI organizes categories automatically.',
-      thirdAlt: 'In-progress task screen with organized categories and statuses',
     },
     features: {
       kicker: 'What it does',
@@ -161,6 +156,7 @@ export const translations = {
       privacy: 'Privacy policy',
       contact: 'Contact',
       appStore: 'App Store',
+      appleTrademark: 'Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries.',
     },
   },
 };

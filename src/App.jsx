@@ -61,14 +61,14 @@ function PageContent() {
             </h2>
             <div className="cta-row">
               <a
-                className="btn-ink"
+                className="final-download-link"
                 href="https://apps.apple.com/kr/app/priofy/id6755681352?l=en-GB"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t('hero.appStoreAria')}
               >
-                <span className="apple-mark" aria-hidden="true"></span>
                 {t('hero.download')}
+                <span aria-hidden="true"> ↗</span>
               </a>
               <span className="paren">{t('final.play')}</span>
             </div>
