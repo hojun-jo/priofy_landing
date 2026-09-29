@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="wrap footer-row">
-        <a className="wordmark" href="#top" aria-label="Priofy 홈" style={{ fontSize: '0.95rem' }}>
-          priofy<span aria-hidden="true">.</span>
+        <a className="wordmark" href="#top" aria-label="Sortide 홈" style={{ fontSize: '0.95rem' }}>
+          sortide<span aria-hidden="true">.</span>
         </a>
         <nav className="footer-links" aria-label={t('footer.navigationLabel')}>
           <a href={PRIVACY_POLICY_URL} target="_blank" rel="noopener noreferrer">{t('footer.privacy')}</a>

@@ -20,8 +20,8 @@ function PageContent() {
 
       <header className="site-header">
         <div className="wrap header-row">
-          <a className="wordmark" href="#top" aria-label="Priofy 홈">
-            priofy<span aria-hidden="true">.</span>
+          <a className="wordmark" href="#top" aria-label="Sortide 홈">
+            sortide<span aria-hidden="true">.</span>
           </a>
 
           <div className="header-actions">
